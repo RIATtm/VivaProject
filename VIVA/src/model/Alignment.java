@@ -15,6 +15,6 @@ public class Alignment {
         l[0].setBounds(190, 110, 727, 440);
         l[1].setBounds(80, 170, 727, 330);
         l[2].setBounds(450, 110, 727, 440);
-        l[3].setBounds(560, 170, 727, 330);
+        l[3].setBounds(560, 100, 727, 330);
     }
 }
