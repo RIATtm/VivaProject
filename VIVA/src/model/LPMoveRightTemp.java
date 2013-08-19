@@ -13,7 +13,7 @@ import javax.swing.JLayeredPane;
  */
 public class LPMoveRightTemp {
 
-    int Fx, Fy, Fh, Ey, Eh, Ckx, Cky;
+    int Fx, Fy, Fh, Ey, Eh, Ex, Ckx, Cky;
 
     public void tempPane(final Component c, final JLayeredPane l) {
         final int xC = c.getX();
@@ -22,7 +22,7 @@ public class LPMoveRightTemp {
         if (xC == 80 || xC == 190) {
             if (xC == 80) {
                 Fx = 190;
-                Fy = 110;
+                Fy = 160;
                 Fh = 610;
                 Ckx = 320;
                 Cky = 80;
@@ -31,7 +31,7 @@ public class LPMoveRightTemp {
                 Fx = 320;
                 Fy = 60;
                 Fh = 610;
-                Ey = 7;
+                Ey = 56;
                 Eh = 127;
                 Ckx = 320;
                 Cky = 80;
@@ -52,14 +52,19 @@ public class LPMoveRightTemp {
                 }
             }
         }
-
         if (xC == 320) {
-            Fx = 450;
-            Fy = 110;
-            Fh = 610;
-            Ckx = 320;
-            if (Ckx == xC && Cky < yC) {
-                for (int lx = xC, ly = yC - Ey, lh = hC; lx <= Fx && ly <= Fy /*&& lh >= Fh*/; lx++, ly++, lh--) {
+            if (xC == 320) {
+                Fx = 450;
+                Fy = 160;
+                Fh = 440;
+                Ckx = 320;
+                Eh = 129;
+                Ey = 59;
+                Ex = 6;
+            }
+            
+            if (Ckx == xC) {
+                for (int lx = xC + Ex, ly = yC + Ey, lh = hC - Eh; lx <= Fx && ly <= Fy /*&& lh >= Fh*/; lx++, ly++, lh--) {
                     lx++;
                     c.setLocation(lx, ly);
                     lx++;
@@ -68,8 +73,47 @@ public class LPMoveRightTemp {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    
-                    c.setSize(727, lh + Eh);
+
+                    c.setSize(727, lh);
+
+                }
+
+            }
+        }
+        
+        if (xC == 450|| xC==560) {
+            if (xC == 450 ) {
+                Fx = 560;
+                Fy = 220;
+                Fh = 440;
+                Ckx = 320;
+                Eh = 129;
+                Ey = 59;
+                Ex = 6;
+            }
+            if (xC == 560 ) {
+                Fx = 600;
+                Fy = 300;
+                Fh = 440;
+                Ckx = 320;
+                Eh = 129;
+                Ey = 59;
+                Ex = 6;
+            }
+            
+            if (Ckx == xC) {
+                for (int lx = xC + Ex, ly = yC + Ey, lh = hC - Eh; lx <= Fx && ly <= Fy /*&& lh >= Fh*/; lx++, ly++, lh--) {
+                    lx++;
+                    c.setLocation(lx, ly);
+                    lx++;
+                    try {
+                        Thread.sleep(4);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    c.setSize(727, lh);
+
                 }
 
             }

@@ -138,14 +138,15 @@ public class mainWindow extends javax.swing.JFrame {
         left1panel.setBackground(new java.awt.Color(255, 204, 204));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ThemeBG.jpg"))); // NOI18N
-        jLabel1.setBounds(0, 0, 727, 709);
+        jLabel1.setBounds(0, 0, 727, 610);
         left1panel.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         left1panel.setBounds(320, 60, 727, 610);
         BGPane.add(left1panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("E:\\important\\images\\wallpapers\\background\\Wallpapers\\Desktop\\the-darkness-2.jpg")); // NOI18N
+        jLabel3.setBackground(new java.awt.Color(204, 0, 51));
         jLabel3.setText("jLabel3");
+        jLabel3.setOpaque(true);
         jLabel3.setBounds(0, 0, 727, 610);
         left2panel.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -207,7 +208,8 @@ public class mainWindow extends javax.swing.JFrame {
         // new LPRotationRight().left1Pane(getComp, BGPane);z
         //                 int x = (int) left1panel.getLocation().getX();
         //        int y = (int) left1panel.getLocation().getY();
-        new LPRotation().rightAction(BGPane.getComponentAt(190, 110), BGPane.getComponentAt(80, 170), BGPane.getComponentAt(320, 60), BGPane);
+        new LPRotation().rightAction(BGPane.getComponentAt(190, 159), BGPane.getComponentAt(80, 219), BGPane.getComponentAt(320, 60), BGPane.getComponentAt(450, 159), BGPane);
+       System.out.println(BGPane.getComponentAt(450, 160));
 //        BGPane.moveToFront(BGPane.getComponentAt(320, 60).getParent());
 //        System.out.println(BGPane.getComponentAt(320, 60).get);
 //        if(left1panel.getLocation().getX()==320 && left1panel.getLocation().getY()==60){
@@ -219,6 +221,7 @@ public class mainWindow extends javax.swing.JFrame {
 //        }else if(right2panel.getLocation().getX()==320 && right2panel.getLocation().getY()==60){
 //            BGPane.moveToFront(right2panel);
 //        }
+        BGPane.moveToFront(BGPane.getComponentAt(320, 60));
     }//GEN-LAST:event_left1mouseMouseEntered
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

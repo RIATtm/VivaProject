@@ -14,7 +14,7 @@ import model.LPMoveRightTemp;
  */
 public class LPRotation {
 
-    public void rightAction(final Component c1,final Component c2, final Component c3, final JLayeredPane l) {
+    public void rightAction(final Component c1,final Component c2, final Component c3,final Component c4, final JLayeredPane l) {
         final int xC = c1.getX();
         if(xC==80){}if(xC==190){}
         new Thread(new Runnable() {
@@ -33,6 +33,12 @@ public class LPRotation {
             @Override
             public void run() {
                 new LPMoveRightTemp().tempPane(c3, l);
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                new LPMoveRightTemp().tempPane(c4, l);
             }
         }).start();
     }
