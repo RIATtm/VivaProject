@@ -219,8 +219,6 @@ public class mainWindow extends javax.swing.JFrame {
 //        }else if(right2panel.getLocation().getX()==320 && right2panel.getLocation().getY()==60){
 //            BGPane.moveToFront(right2panel);
 //        }
-        BGPane.moveToFront(BGPane.getComponentAt(320, 60));
-        System.out.println(BGPane.getComponentAt(320, 60));
     }//GEN-LAST:event_left1mouseMouseEntered
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

@@ -19,24 +19,40 @@ public class LPMoveRightTemp {
         final int xC = c.getX();
         final int yC = c.getY();
         final int hC = c.getHeight();
-        if (xC == 80) {
-            Fx = 190;
-            Fy = 110;
-            Fh = 610;
-            Ckx = 320;
-            Cky = 80;
+        if (xC == 80 || xC == 190) {
+            if (xC == 80) {
+                Fx = 190;
+                Fy = 110;
+                Fh = 610;
+                Ckx = 320;
+                Cky = 80;
+            }
+            if (xC == 190) {
+                Fx = 320;
+                Fy = 60;
+                Fh = 610;
+                Ey = 7;
+                Eh = 127;
+                Ckx = 320;
+                Cky = 80;
 
-        }
-        if (xC == 190) {
-            Fx = 320;
-            Fy = 60;
-            Fh = 610;
-            Ey = 7;
-            Eh = 127;
-            Ckx = 320;
-            Cky = 80;
+            }
 
+            if (xC < Ckx && yC > Cky) {
+                for (int lx = xC, ly = yC - Ey, lh = hC; lx <= Fx && ly >= Fy && lh <= Fh; lx++, ly--, lh++) {
+                    lx++;
+                    c.setLocation(lx, ly);
+                    lx++;
+                    try {
+                        Thread.sleep(4);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    c.setSize(727, lh + Eh);
+                }
+            }
         }
+
         if (xC == 320) {
             Fx = 450;
             Fy = 110;
@@ -52,23 +68,10 @@ public class LPMoveRightTemp {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
+                    
                     c.setSize(727, lh + Eh);
                 }
 
-            }
-        }
-        if (xC < Ckx && yC > Cky) {
-            for (int lx = xC, ly = yC - Ey, lh = hC; lx <= Fx && ly >= Fy && lh <= Fh; lx++, ly--, lh++) {
-                lx++;
-                c.setLocation(lx, ly);
-                lx++;
-                try {
-                    Thread.sleep(4);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                c.setSize(727, lh + Eh);
             }
         }
     }
