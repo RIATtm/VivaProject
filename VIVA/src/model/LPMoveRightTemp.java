@@ -35,7 +35,7 @@ public class LPMoveRightTemp {
                 Eh = 127;
                 Ckx = 320;
                 Cky = 80;
-
+                System.out.println("yes");
             }
 
             if (xC < Ckx && yC > Cky) {

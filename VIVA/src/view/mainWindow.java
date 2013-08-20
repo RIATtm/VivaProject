@@ -209,7 +209,7 @@ public class mainWindow extends javax.swing.JFrame {
         //                 int x = (int) left1panel.getLocation().getX();
         //        int y = (int) left1panel.getLocation().getY();
         new LPRotation().rightAction(BGPane.getComponentAt(190, 159), BGPane.getComponentAt(80, 219), BGPane.getComponentAt(320, 60), BGPane.getComponentAt(450, 159), BGPane);
-       System.out.println(BGPane.getComponentAt(450, 160));
+       
 //        BGPane.moveToFront(BGPane.getComponentAt(320, 60).getParent());
 //        System.out.println(BGPane.getComponentAt(320, 60).get);
 //        if(left1panel.getLocation().getX()==320 && left1panel.getLocation().getY()==60){
@@ -221,7 +221,7 @@ public class mainWindow extends javax.swing.JFrame {
 //        }else if(right2panel.getLocation().getX()==320 && right2panel.getLocation().getY()==60){
 //            BGPane.moveToFront(right2panel);
 //        }
-        BGPane.moveToFront(BGPane.getComponentAt(320, 60));
+       
     }//GEN-LAST:event_left1mouseMouseEntered
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
