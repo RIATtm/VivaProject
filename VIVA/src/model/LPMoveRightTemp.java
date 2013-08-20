@@ -35,12 +35,12 @@ public class LPMoveRightTemp {
                 Eh = 127;
                 Ckx = 320;
                 Cky = 80;
-                Ex=1;
+                Ex = 1;
 
             }
 
             if (xC < Ckx && yC > Cky) {
-                for (int lx = xC-Ex, ly = yC - Ey, lh = hC; lx <= Fx && ly >= Fy && lh <= Fh; lx++, ly--, lh++) {
+                for (int lx = xC - Ex, ly = yC - Ey, lh = hC; lx <= Fx && ly >= Fy && lh <= Fh; lx++, ly--, lh++) {
                     lx++;
                     lx++;
                     c.setLocation(lx, ly);
@@ -50,8 +50,6 @@ public class LPMoveRightTemp {
                         e.printStackTrace();
                     }
                     c.setSize(727, lh + Eh);
-                     System.out.println(lx + " " + ly);
-                        System.out.println(lh);
                 }
             }
         }
@@ -71,7 +69,7 @@ public class LPMoveRightTemp {
                     lx++;
                     lx++;
                     c.setLocation(lx, ly);
-                    
+
                     try {
                         Thread.sleep(4);
                     } catch (Exception e) {
@@ -79,16 +77,16 @@ public class LPMoveRightTemp {
                     }
 
                     c.setSize(727, lh);
-                       
-                    
+
+
 
                 }
 
             }
         }
 
-        if (xC == 450 || xC == 560) {
-            if (xC == 450) {
+        if (xC == 450) {
+            if (xC==450) {
                 Fx = 560;
                 Fy = 220;
                 Fh = 440;
@@ -96,30 +94,52 @@ public class LPMoveRightTemp {
                 Eh = 149;
                 Ey = 58;
                 Ex = 102;
-                System.out.println("cm");
-            }
-            if (xC == 560) {
-                Fx = 600;
-                Fy = 300;
-                Fh = 440;
-                Ckx = 320;
-                Eh = 129;
-                Ey = 59;
-                Ex = 6;
             }
 
             if (Ckx == xC) {
-                for (int lx = xC + Ex, ly = yC + Ey, lh = hC - Eh; lx <= Fx && ly <= Fy /*&& lh >= Fh*/; lx++, ly++, lh--) {
+                for (int lx = xC + Ex, ly = yC + Ey, lh = hC - Eh; lx <= Fx /*&& ly <= Fy /*&& lh >= Fh*/; lx++, ly++, lh--) {
+                    lx++;
                     lx++;
                     c.setLocation(lx, ly);
-                    lx++;
+
                     try {
                         Thread.sleep(4);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
+                    
                     c.setSize(727, lh);
+                }
+
+            }
+        }
+        if(xC==560){
+            
+                Fx = 80;
+                Fy = 219;
+                Fh = 330;
+                Ckx = 560;
+                Eh = 129;
+                Ey = 59;
+                Ex = 6;
+                if (Ckx == xC) {
+                    
+                   
+                for (int lx = xC/* , ly = yC, lh = hC */; lx >= Fx /*&& ly <= Fy /*&& lh >= Fh*/; lx--) {
+                    lx--;
+                    lx--;
+                    c.setLocation(lx, Fy);
+                    try {
+                        Thread.sleep(4);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    
+                    c.setSize(727, Fh);
+                  l.moveToBack(c);
+                  
+                    System.out.println(lx+" "+Fy);
+                    System.out.println(Fh);
                 }
 
             }
