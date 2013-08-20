@@ -44,13 +44,13 @@ public class mainWindow extends javax.swing.JFrame {
         l2 = new javax.swing.JLabel();
         r1 = new javax.swing.JLabel();
         r2 = new javax.swing.JLabel();
+        right1panel = new javax.swing.JLayeredPane();
+        jLabel4 = new javax.swing.JLabel();
         homepanel = new javax.swing.JLayeredPane();
         left1panel = new javax.swing.JLayeredPane();
         jLabel1 = new javax.swing.JLabel();
         left2panel = new javax.swing.JLayeredPane();
         jLabel3 = new javax.swing.JLabel();
-        right1panel = new javax.swing.JLayeredPane();
-        jLabel4 = new javax.swing.JLabel();
         right2panel = new javax.swing.JLayeredPane();
         jLabel2 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
@@ -130,6 +130,16 @@ public class mainWindow extends javax.swing.JFrame {
         r2.setBounds(1177, 220, 110, 480);
         BGPane.add(r2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        right1panel.setBackground(new java.awt.Color(153, 255, 153));
+
+        jLabel4.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel4.setOpaque(true);
+        jLabel4.setBounds(0, 0, 727, 610);
+        right1panel.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        right1panel.setBounds(320, 60, 727, 610);
+        BGPane.add(right1panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         homepanel.setBackground(new java.awt.Color(255, 204, 204));
         homepanel.setOpaque(true);
         homepanel.setBounds(320, 60, 727, 610);
@@ -152,15 +162,6 @@ public class mainWindow extends javax.swing.JFrame {
 
         left2panel.setBounds(320, 60, 727, 610);
         BGPane.add(left2panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        right1panel.setBackground(new java.awt.Color(153, 255, 153));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("E:\\important\\images\\wallpapers\\background\\Wallpapers\\New folder\\army_gas_mask-wallpaper-1366x768.jpg")); // NOI18N
-        jLabel4.setBounds(0, 0, 1366, 768);
-        right1panel.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        right1panel.setBounds(320, 60, 727, 610);
-        BGPane.add(right1panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         right2panel.setBackground(new java.awt.Color(102, 51, 255));
         right2panel.setOpaque(true);
