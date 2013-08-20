@@ -22,10 +22,11 @@ public class LPMoveRightTemp {
         if (xC == 80 || xC == 190) {
             if (xC == 80) {
                 Fx = 190;
-                Fy = 160;
+                Fy = 159;
                 Fh = 610;
                 Ckx = 320;
                 Cky = 80;
+                Ey=24;
             }
             if (xC == 190) {
                 Fx = 320;
@@ -49,6 +50,7 @@ public class LPMoveRightTemp {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
+                    System.out.println(ly);
                     c.setSize(727, lh + Eh);
                 }
             }
@@ -137,9 +139,6 @@ public class LPMoveRightTemp {
                     
                     c.setSize(727, Fh);
                   l.moveToBack(c);
-                  
-                    System.out.println(lx+" "+Fy);
-                    System.out.println(Fh);
                 }
 
             }
