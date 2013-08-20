@@ -123,11 +123,11 @@ public class LPMoveRightTemp {
                 Ckx = 560;
                 Eh = 129;
                 Ey = 59;
-                Ex = 6;
+                Ex = 2;
                 if (Ckx == xC) {
                     
                    
-                for (int lx = xC/* , ly = yC, lh = hC */; lx >= Fx /*&& ly <= Fy /*&& lh >= Fh*/; lx--) {
+                for (int lx = xC+Ex/* , ly = yC, lh = hC */; lx >= Fx /*&& ly <= Fy /*&& lh >= Fh*/; lx--) {
                     lx--;
                     lx--;
                     c.setLocation(lx, Fy);
@@ -136,9 +136,9 @@ public class LPMoveRightTemp {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    
+                    System.out.println(lx);
                     c.setSize(727, Fh);
-                  l.moveToBack(c);
+                  
                 }
 
             }

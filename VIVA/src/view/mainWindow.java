@@ -45,9 +45,11 @@ public class mainWindow extends javax.swing.JFrame {
         r1 = new javax.swing.JLabel();
         r2 = new javax.swing.JLabel();
         right2panel = new javax.swing.JLayeredPane();
+        jLabel5 = new javax.swing.JLabel();
         right1panel = new javax.swing.JLayeredPane();
         jLabel4 = new javax.swing.JLabel();
         homepanel = new javax.swing.JLayeredPane();
+        jLabel6 = new javax.swing.JLabel();
         left1panel = new javax.swing.JLayeredPane();
         jLabel1 = new javax.swing.JLabel();
         left2panel = new javax.swing.JLayeredPane();
@@ -132,12 +134,18 @@ public class mainWindow extends javax.swing.JFrame {
 
         right2panel.setBackground(new java.awt.Color(102, 51, 255));
         right2panel.setOpaque(true);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/DeskWalls (102).jpg"))); // NOI18N
+        jLabel5.setBounds(0, 0, 727, 610);
+        right2panel.add(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         right2panel.setBounds(320, 60, 727, 610);
         BGPane.add(right2panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         right1panel.setBackground(new java.awt.Color(153, 255, 153));
 
         jLabel4.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/DeskWalls (398).jpg"))); // NOI18N
         jLabel4.setOpaque(true);
         jLabel4.setBounds(0, 0, 727, 610);
         right1panel.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -147,12 +155,17 @@ public class mainWindow extends javax.swing.JFrame {
 
         homepanel.setBackground(new java.awt.Color(255, 204, 204));
         homepanel.setOpaque(true);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/colorful_flower-wallpaper-1600x900.jpg"))); // NOI18N
+        jLabel6.setBounds(0, 0, 727, 610);
+        homepanel.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         homepanel.setBounds(320, 60, 727, 610);
         BGPane.add(homepanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         left1panel.setBackground(new java.awt.Color(255, 204, 204));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ThemeBG.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/DeskWalls (90).jpg"))); // NOI18N
         jLabel1.setBounds(0, 0, 727, 610);
         left1panel.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -160,6 +173,7 @@ public class mainWindow extends javax.swing.JFrame {
         BGPane.add(left1panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel3.setBackground(new java.awt.Color(204, 0, 51));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/beatiful_girls-wallpaper-1366x768.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         jLabel3.setOpaque(true);
         jLabel3.setBounds(0, 0, 727, 610);
@@ -274,6 +288,8 @@ public class mainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel l1;
     private javax.swing.JLabel l2;
     private javax.swing.JPanel left1mouse;
