@@ -44,16 +44,16 @@ public class mainWindow extends javax.swing.JFrame {
         l2 = new javax.swing.JLabel();
         r1 = new javax.swing.JLabel();
         r2 = new javax.swing.JLabel();
-        right2panel = new javax.swing.JLayeredPane();
-        jLabel5 = new javax.swing.JLabel();
-        right1panel = new javax.swing.JLayeredPane();
-        jLabel4 = new javax.swing.JLabel();
         homepanel = new javax.swing.JLayeredPane();
         jLabel6 = new javax.swing.JLabel();
         left1panel = new javax.swing.JLayeredPane();
         jLabel1 = new javax.swing.JLabel();
         left2panel = new javax.swing.JLayeredPane();
         jLabel3 = new javax.swing.JLabel();
+        right1panel = new javax.swing.JLayeredPane();
+        jLabel4 = new javax.swing.JLabel();
+        right2panel = new javax.swing.JLayeredPane();
+        jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
@@ -132,27 +132,6 @@ public class mainWindow extends javax.swing.JFrame {
         r2.setBounds(1177, 220, 110, 480);
         BGPane.add(r2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        right2panel.setBackground(new java.awt.Color(102, 51, 255));
-        right2panel.setOpaque(true);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/DeskWalls (102).jpg"))); // NOI18N
-        jLabel5.setBounds(0, 0, 727, 610);
-        right2panel.add(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        right2panel.setBounds(320, 60, 727, 610);
-        BGPane.add(right2panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        right1panel.setBackground(new java.awt.Color(153, 255, 153));
-
-        jLabel4.setBackground(new java.awt.Color(0, 153, 153));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/DeskWalls (398).jpg"))); // NOI18N
-        jLabel4.setOpaque(true);
-        jLabel4.setBounds(0, 0, 727, 610);
-        right1panel.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        right1panel.setBounds(320, 60, 727, 610);
-        BGPane.add(right1panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         homepanel.setBackground(new java.awt.Color(255, 204, 204));
         homepanel.setOpaque(true);
 
@@ -181,6 +160,27 @@ public class mainWindow extends javax.swing.JFrame {
 
         left2panel.setBounds(320, 60, 727, 610);
         BGPane.add(left2panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        right1panel.setBackground(new java.awt.Color(153, 255, 153));
+
+        jLabel4.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/DeskWalls (398).jpg"))); // NOI18N
+        jLabel4.setOpaque(true);
+        jLabel4.setBounds(0, 0, 727, 610);
+        right1panel.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        right1panel.setBounds(320, 60, 727, 610);
+        BGPane.add(right1panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        right2panel.setBackground(new java.awt.Color(102, 51, 255));
+        right2panel.setOpaque(true);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BGpics/DeskWalls (102).jpg"))); // NOI18N
+        jLabel5.setBounds(0, 0, 727, 610);
+        right2panel.add(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        right2panel.setBounds(320, 60, 727, 610);
+        BGPane.add(right2panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home1.png"))); // NOI18N
         jLabel2.setBounds(319, 60, 730, 760);
@@ -223,26 +223,27 @@ public class mainWindow extends javax.swing.JFrame {
         // new LPRotationRight().left1Pane(getComp, BGPane);z
         //                 int x = (int) left1panel.getLocation().getX();
         //        int y = (int) left1panel.getLocation().getY();
-        new LPRotation().rightAction(BGPane.getComponentAt(190, 159), BGPane.getComponentAt(80, 219), BGPane.getComponentAt(320, 60), BGPane.getComponentAt(450, 159),BGPane.getComponentAt(560, 219), BGPane);
-        
-//        BGPane.moveToFront(BGPane.getComponentAt(320, 60).getParent());
-//        System.out.println(BGPane.getComponentAt(320, 60).get);
-//        if(left1panel.getLocation().getX()==320 && left1panel.getLocation().getY()==60){
-//            BGPane.moveToFront(left1panel);
-//        }else if(left2panel.getLocation().getX()==320 && left2panel.getLocation().getY()==60){
-//            BGPane.moveToFront(left2panel);
-//        }else if(right1panel.getLocation().getX()==320 && right1panel.getLocation().getY()==60){
-//            BGPane.moveToFront(right1panel);
-//        }else if(right2panel.getLocation().getX()==320 && right2panel.getLocation().getY()==60){
-//            BGPane.moveToFront(right2panel);
-//        }
-       
+        new LPRotation().rightAction(BGPane.getComponentAt(190, 159), BGPane.getComponentAt(80, 219), BGPane.getComponentAt(320, 60), BGPane.getComponentAt(1048, 159), BGPane.getComponentAt(1178, 219), BGPane);
+//        Component component = BGPane.getComponent(1); 
+//        System.out.println(component.getParent()+"gjf");
+        //left2panel.grabFocus();//left1panel.moveToFront(left2panel);
+        //        BGPane.moveToFront(BGPane.getComponentAt(320, 60).getParent());
+        //        System.out.println(BGPane.getComponentAt(320, 60).get);
+        //        if(left1panel.getLocation().getX()==320 && left1panel.getLocation().getY()==60){
+        //            BGPane.moveToFront(left1panel);
+        //        }else if(left2panel.getLocation().getX()==320 && left2panel.getLocation().getY()==60){
+        //            BGPane.moveToFront(left2panel);
+        //        }else if(right1panel.getLocation().getX()==320 && right1panel.getLocation().getY()==60){
+        //            BGPane.moveToFront(right1panel);
+        //        }else if(right2panel.getLocation().getX()==320 && right2panel.getLocation().getY()==60){
+        //            BGPane.moveToFront(right2panel);
+        //        }
+
+
     }//GEN-LAST:event_left1mouseMouseEntered
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
-        System.out.println(BGPane.getComponentAt(320, 60));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -324,7 +325,7 @@ public class mainWindow extends javax.swing.JFrame {
                             Thread.sleep(4);
                         } catch (Exception e) {
                             e.printStackTrace();
-                            
+
                         }
                     }
 //                    jLayeredPane1.moveToFront(left1panel);

@@ -26,14 +26,14 @@ public class LPMoveRightTemp {
                 Fh = 610;
                 Ckx = 320;
                 Cky = 80;
-                Ey=24;
+                Ey = 24;
             }
             if (xC == 190) {
                 Fx = 320;
                 Fy = 60;
                 Fh = 610;
                 Ey = 56;
-                Eh = 127;
+                Eh = 200;
                 Ckx = 320;
                 Cky = 80;
                 Ex = 1;
@@ -50,9 +50,9 @@ public class LPMoveRightTemp {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    System.out.println(ly);
                     c.setSize(727, lh + Eh);
                 }
+                l.moveToFront(c);
             }
         }
         if (xC == 320) {
@@ -79,16 +79,12 @@ public class LPMoveRightTemp {
                     }
 
                     c.setSize(727, lh);
-
-
-
                 }
-
             }
         }
 
         if (xC == 450) {
-            if (xC==450) {
+            if (xC == 450) {
                 Fx = 560;
                 Fy = 220;
                 Fh = 440;
@@ -109,25 +105,25 @@ public class LPMoveRightTemp {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    
+
                     c.setSize(727, lh);
                 }
 
             }
         }
-        if(xC==560){
-            
-                Fx = 80;
-                Fy = 219;
-                Fh = 330;
-                Ckx = 560;
-                Eh = 129;
-                Ey = 59;
-                Ex = 2;
-                if (Ckx == xC) {
-                    
-                   
-                for (int lx = xC+Ex/* , ly = yC, lh = hC */; lx >= Fx /*&& ly <= Fy /*&& lh >= Fh*/; lx--) {
+        if (xC == 560) {
+
+            Fx = 80;
+            Fy = 219;
+            Fh = 330;
+            Ckx = 560;
+            Eh = 129;
+            Ey = 59;
+            Ex = 2;
+            if (Ckx == xC) {
+
+
+                for (int lx = xC + Ex/* , ly = yC, lh = hC */; lx >= Fx /*&& ly <= Fy /*&& lh >= Fh*/; lx--) {
                     lx--;
                     lx--;
                     c.setLocation(lx, Fy);
@@ -138,7 +134,7 @@ public class LPMoveRightTemp {
                     }
                     System.out.println(lx);
                     c.setSize(727, Fh);
-                  
+
                 }
 
             }
